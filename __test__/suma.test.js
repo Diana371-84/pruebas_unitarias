@@ -16,3 +16,4 @@ describe('calculator', () => {
       expect(sum(firstValue, secondValue)).toBe(expectedResult);
     });
   });
+

@@ -7,3 +7,14 @@ test('Comprobar palindromo hola', () => {
 test('Comprobar palindromo agua salada', () => {
     expect(palindromo ("agua salada")).toBe('adalas auga');
 })
+
+
+describe('palindromo', () => {
+    test.each`
+      firstValue |expectedResult   
+      ${"nieve"}   | ${"evein"}       
+      ${"amor"}    | ${"roma"}        
+    `('$firstValue + should return $expectedResult', ({firstValue, expectedResult}) => {
+      expect(palindromo(firstValue,)).toBe(expectedResult);
+    });
+  });

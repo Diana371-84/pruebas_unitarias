@@ -1,7 +1,7 @@
 // FUNCION A PROBAR
 
-function isUpperCase(ROMPER){
-    return (ROMPER == ROMPER.toUpperCase());
+function isUpperCase(sentence){
+    return (sentence == sentence.toUpperCase());
 }
 
 module.exports = isUpperCase;
